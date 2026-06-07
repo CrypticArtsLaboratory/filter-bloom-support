@@ -1,0 +1,63 @@
+name: Bug report
+description: Something in Filter Bloom isn't working right
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Filter Bloom version
+      description: Shown in the plug-in's Settings popout (gear icon, bottom-right)
+      placeholder: "0.1.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Plug-in format
+      options:
+        - AU (macOS)
+        - VST3 (macOS)
+        - VST3 (Windows)
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "macOS 14.5 (Apple Silicon) / Windows 11"
+    validations:
+      required: true
+  - type: input
+    id: daw
+    attributes:
+      label: DAW and version
+      placeholder: "Ableton Live 12.1 / Adobe Audition 2026 / Logic Pro 11"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead? If it's an audio problem, describe what you hear.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Insert Filter Bloom on an audio track
+        2. Draw an envelope on band 2
+        3. Save and reload the project
+        4. …
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots, project details, crash logs, sample rate / buffer size — anything that might help.
+    validations:
+      required: false

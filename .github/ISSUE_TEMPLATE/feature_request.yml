@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest an idea or improvement for Filter Bloom
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+      description: Describe the musical or workflow goal — what sound or process are you after?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How do you imagine it working?
+      description: Your idea for the control, behaviour, or change.
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current workaround (if any)
+      description: How do you handle this today, inside or outside Filter Bloom?
+    validations:
+      required: false
